@@ -1,0 +1,124 @@
+html {
+  max-width: 1920px;
+  width: auto;
+}
+
+/* navbar */
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  background-color: #353a40 !important;
+}
+
+.navbar-brand {
+  color: #fffdff;
+}
+
+.active {
+  color: #feffff !important;
+}
+
+.nav-link {
+  color: #949da2;
+}
+
+.comprar-tickets {
+  color: #28a642;
+}
+
+.logo-container {
+  width: 200px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 6% 10px 0px;
+  }
+
+  .logo-container {
+    width: 200px;
+    margin-left: 6%;
+  }
+}
+
+.logo {
+  max-width: 40%;
+}
+
+/* banner */
+@media only screen and (max-width: 1200px) {
+  .only-mobile {
+    display: flex;
+    visibility: visible;
+  }
+
+  .mobile-false {
+    display: none;
+    visibility: none;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .only-mobile {
+    display: none;
+    visibility: none;
+  }
+
+  .mobile-false {
+    visibility: visible;
+  }
+}
+
+.banner {
+  height: 80vh;
+  width: 100%;
+}
+
+.img-banner {
+  max-width: 100%;
+  filter: brightness(50%);
+}
+
+.img-banner-mobile {
+  height: 100vh;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  filter: brightness(50%);
+}
+
+.texto-banner {
+  width: 600px;
+  text-align: end;
+  color: #fff;
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 14%;
+  right: 10%;
+}
+
+.texto-banner-mobile {
+  width: 90%;
+  text-align: end;
+  color: #fff;
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 5%;
+  margin: 0px 5% 0px 5%;
+}
+
+.button-tickets {
+  background-color: #29a744;
+}
+
+.button-tickets:hover {
+  background-color: #218336 !important;
+}
