@@ -61,6 +61,7 @@ header {
   }
 
   .mobile-false {
+    display: none;
     visibility: none;
   }
 }
@@ -73,6 +74,7 @@ header {
 
   .mobile-false {
     visibility: visible;
+    display: flex;
   }
 }
 
