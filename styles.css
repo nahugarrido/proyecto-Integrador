@@ -61,7 +61,6 @@ header {
   }
 
   .mobile-false {
-    display: none;
     visibility: none;
   }
 }
