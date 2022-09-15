@@ -127,9 +127,8 @@ header {
 /* Oradores */
 
 #oradores {
-  height: 50vh;
-  margin: 0px 10px 0px 10px;
   scroll-margin-top: 100px;
+  margin: 0px 10px 0px 10px;
 }
 
 .centrar {
@@ -141,6 +140,10 @@ header {
 .titulo {
   margin-top: 20px;
   font-size: 1em;
+}
+
+.titulo span {
+  font-size: 0.8em;
 }
 
 .card {
@@ -171,6 +174,7 @@ header {
 /* fecha */
 
 #fecha {
+  scroll-margin-top: 110px;
   margin-top: 5px;
 }
 
@@ -182,9 +186,17 @@ header {
 #fecha .col-md-6 {
   padding: 0px 1px 0px 0px !important;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   #fecha {
     padding: 0px 10px 0px 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .img-inside {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 }
 
@@ -201,4 +213,80 @@ header {
 
 .fecha-text {
   margin: 3% 2% 3% 2%;
+}
+
+/* formulario */
+#formulario > span {
+  font-size: 0.91em;
+}
+
+#formulario > .col-6,
+.col-12 {
+  padding: 0.75rem !important;
+}
+
+#formulario > input,
+input::placeholder {
+  font-size: 0.9em;
+}
+
+#formulario > textarea,
+textarea::placeholder {
+  font-size: 1.3em;
+}
+
+#formulario form {
+  margin-top: 1%;
+}
+
+.form-text {
+  font-size: 0.7em;
+}
+
+#enviar {
+  width: 100%;
+  background-color: #96c93e;
+  border: 1px solid #96c93e;
+  margin-top: 2%;
+  font-size: 1.2em;
+}
+
+/* footer */
+
+@media only screen and (max-width: 865px) {
+  #footer li {
+    font-size: 0.5em !important;
+  }
+
+  #footer ul {
+    justify-content: space-evenly !important;
+  }
+}
+#footer {
+  background: rgb(28, 54, 67);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 54, 67, 1) 0%,
+    rgba(29, 82, 112, 1) 35%
+  );
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+#footer li {
+  width: 12%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#footer ul {
+  list-style: none;
+  display: inline-flex;
+  width: 100%;
+  padding: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
