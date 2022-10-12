@@ -11,6 +11,10 @@ header {
   z-index: 1030;
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
 .navbar {
   background-color: #353a40 !important;
 }
@@ -239,16 +243,85 @@ textarea::placeholder {
   margin-top: 1%;
 }
 
+#formulario {
+  margin: 4.5rem;
+}
+
 .form-text {
   font-size: 0.7em;
 }
 
-#enviar {
+.btn-form {
   width: 100%;
   background-color: #96c93e;
   border: 1px solid #96c93e;
-  margin-top: 2%;
   font-size: 1.2em;
+}
+
+.btn-form:hover {
+  width: 100%;
+  background-color: #96c93e !important;
+  border: 1px solid #96c93e !important;
+  font-size: 1.2em;
+}
+
+/* tickets */
+.tickets {
+  text-align: center;
+  padding-top: 90px;
+  justify-content: center;
+}
+
+.card-custom {
+  margin: 0px 5px;
+  border: 2px solid #1f87f7;
+  padding: 1rem;
+}
+
+.c1 {
+  border-color: #1f87f7;
+}
+
+.c2 {
+  border-color: #32a8bb;
+}
+
+.c3 {
+  border-color: #f7c224;
+}
+
+#tickets .documentacion {
+  font-size: 0.9em;
+}
+
+.alerta {
+  margin: 1rem 0px;
+  height: 50px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  font-size: 0.95em;
+}
+
+.btn-size {
+  margin: 0;
+}
+
+.btn-1 {
+  padding-right: 5px;
+}
+
+.btn-2 {
+  padding-left: 5px;
+}
+
+.form-tickets > label {
+  text-align: left;
+  color: #32a8bb;
+}
+
+.labels-align {
+  text-align: left;
 }
 
 /* footer */
@@ -262,6 +335,7 @@ textarea::placeholder {
     justify-content: space-evenly !important;
   }
 }
+
 #footer {
   background: rgb(28, 54, 67);
   background: linear-gradient(
