@@ -15,11 +15,11 @@ form.addEventListener("submit", (event) => {
   } else {
     let descuento;
     if (categoria.value == 1) {
-      descuento = 0.8;
+      descuento = 0.20;
     } else if (categoria.value == 2) {
       descuento = 0.5;
     } else if (categoria.value == 3) {
-      descuento = 0.15;
+      descuento = 0.85;
     }
     const resultado = parseFloat(cantidad.value) * 200 * descuento;
     alerta.innerHTML = `Total a pagar: $${resultado}`;
